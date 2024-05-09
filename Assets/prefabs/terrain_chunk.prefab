@@ -1,0 +1,56 @@
+{
+  "RootObject": {
+    "__guid": "451ada9c-812a-45b3-ab9f-98d457194a52",
+    "Flags": 0,
+    "Name": "terrain_chunk",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkInterpolation": true,
+    "Children": [
+      {
+        "__guid": "48b847c6-e270-4e22-8669-de1336fe05de",
+        "Flags": 0,
+        "Name": "Terrain",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkInterpolation": true,
+        "Components": [
+          {
+            "__type": "Sandbox.Terrain",
+            "__guid": "98416873-a0f2-4260-9f97-9e693372b2ec",
+            "ClipMapLodExtentTexels": 128,
+            "ClipMapLodLevels": 7,
+            "DebugView": "None",
+            "RenderType": "Off",
+            "TerrainDataFile": "new terrain 1.terrain",
+            "TerrainMaterial": "materials/core/terrain.vmat"
+          },
+          {
+            "__type": "Sandbox.TerrainCollider",
+            "__guid": "55492abd-6a9b-4ca1-843c-23cc318089f4",
+            "IsTrigger": false,
+            "Static": true
+          },
+          {
+            "__type": "TerrainChunkGenerator",
+            "__guid": "82adca05-549b-4973-a383-c34177f2b9ec",
+            "NoiseScale": 1,
+            "NoiseSeed": 871246.5,
+            "Terrain": {
+              "_type": "component",
+              "component_id": "98416873-a0f2-4260-9f97-9e693372b2ec",
+              "go": "48b847c6-e270-4e22-8669-de1336fe05de",
+              "component_type": "Terrain"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
